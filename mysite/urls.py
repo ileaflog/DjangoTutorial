@@ -7,6 +7,9 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
+    # Can you see this was modified?
 
+    url(r'^polls/', include('polls.urls', namespace="polls")),
+    url(r'^rails/', include('rails.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
